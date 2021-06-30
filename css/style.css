@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Montserrat", sans-serif;
+}
+
+#container {
+  max-width: 1025px;
+  margin: 0 auto;
+}
+
+.header {
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav .nav-list {
+  display: flex;
+  list-style: none;
+}
+
+.nav-item {
+  margin-left: 80px;
+}
+
+.nav-item:first-child {
+  margin-left: 0;
+}
+
+.nav-item-link {
+  font-size: 20px;
+  text-decoration: none;
+  color: #000;
+}
+
+.burger-icon {
+  display: none;
+}
+
+#carousel {
+  max-width: 1024px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.slick-slide img {
+  max-width: 100%;
+}
+.section-about {
+  text-align: center;
+  width: 100%;
+  margin: 40px 0;
+  font-size: 28px;
+}
+.sub-heading {
+  height: 80px;
+  width: 100%;
+  font-size: 40px;
+  text-align: center;
+  line-height: 80px;
+  border-top: 1px solid #000;
+  border-bottom: 1px solid #000;
+  text-transform: uppercase;
+}
+.section-history {
+  display: flex;
+  justify-content: space-between;
+  margin: 60px 0;
+}
+.history-item:last-child {
+  padding: 50px;
+}
+.history-item {
+  font-size: 18px;
+  color: #fff;
+  padding: 90px 50px;
+  width: 500px;
+  background: #000;
+}
+span {
+  font-size: 48px;
+}
+#contactUs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #000;
+
+  width: 100%;
+  height: 120px;
+  margin: 30px 0 0 0;
+}
+.send-message {
+  font-size: 28px;
+  text-transform: uppercase;
+  background: #000;
+  color: #fff;
+  width: 200px;
+  height: 60px;
+  border-radius: 8px;
+  margin-right: 30px;
+}
+.send-message-area {
+  resize: none;
+  margin-left: 30px;
+  width: 220px;
+  height: 22px;
+  line-height: 22px;
+  text-align: center;
+}
+@media screen and (max-width: 920px) {
+  .header {
+    height: 125px;
+  }
+  .header-logo {
+    position: absolute;
+    left: 50%;
+    margin-left: -50px;
+    top: 48px;
+  }
+  .header.menu-open + .main-conteiner {
+    padding-top: 125px;
+  }
+  .header.menu-open .header-logo path {
+    fill: #fff;
+  }
+  .header.menu-open {
+    min-height: 316px;
+    background: #000;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+    padding: 48px;
+  }
+  .header.menu-open .nav-item-link {
+    color: #fff;
+  }
+  .header.menu-open .nav-item {
+    margin-left: 45px;
+    display: inline-block;
+  }
+  .nav {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+  .nav .nav-list {
+    display: none;
+  }
+
+  .menu-open .nav .nav-list {
+    display: block;
+  }
+
+  .header.menu-open .burger-icon-item,
+  .header.menu-open .burger-icon-item:before,
+  .header.menu-open .burger-icon-item:after {
+    background: #fff;
+  }
+  .header.menu-open .burger-icon-item {
+    transform: rotate(-45deg);
+  }
+  .header.menu-open .burger-icon-item::after {
+    transform: rotate(90deg);
+    bottom: 0;
+  }
+
+  .header.menu-open .burger-icon-item:before {
+    display: none;
+  }
+
+  .burger-icon {
+    width: 48px;
+    height: 31px;
+    border: none;
+    background: none;
+    position: absolute;
+    right: 57px;
+    top: 54px;
+    outline: none;
+    display: block;
+  }
+
+  .burger-icon-item {
+    width: 48px;
+    height: 5px;
+    background: #000;
+    position: relative;
+    cursor: pointer;
+    display: block;
+    transition: all 0.3s;
+  }
+
+  .burger-icon-item:before {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    top: -13px;
+    left: 0;
+  }
+
+  .burger-icon-item:after {
+    content: "";
+    display: block;
+    width: 48px;
+    height: 5px;
+    background: #000;
+    position: absolute;
+    bottom: -13px;
+    left: 0;
+    transition: all 0.3s;
+  }
+  .section-about {
+    text-align: center;
+    margin: 25px 0;
+  }
+  .sub-heading {
+    height: 65px;
+    border-bottom: 1px solid #000;
+    border-top: 1px solid#000;
+    text-align: center;
+    line-height: 65px;
+    font-size: 28px;
+    text-transform: uppercase;
+  }
+  .section-history {
+    display: block;
+    margin: 30px 0;
+  }
+  .history-item {
+    width: 100%;
+    background: #000;
+    margin: 30px 0;
+    color: #fff;
+    padding: 45px;
+    font-size: 18px;
+  }
+  span {
+    font-size: 48px;
+  }
+}

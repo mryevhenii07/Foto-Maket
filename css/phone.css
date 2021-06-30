@@ -1,0 +1,103 @@
+@media screen and (max-width: 376px) {
+  .header {
+    height: 0;
+    position: relative;
+    display: stretch;
+    z-index: 1;
+  }
+  .burger-icon {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+  }
+  .burger-icon-item {
+    background: #fff;
+  }
+  .burger-icon-item:before {
+    background: #fff;
+  }
+  .burger-icon-item:after {
+    background: #fff;
+  }
+
+  .header-logo {
+    fill: red;
+    opacity: 0;
+    position: absolute;
+    left: 55px;
+    top: 5px;
+  }
+
+  .header.menu-open .header-logo {
+    fill: #fff;
+    opacity: 1;
+  }
+
+  .header.menu-open {
+    padding: 0;
+    height: 330px;
+  }
+  .header.menu-open + .main-conteiner {
+    padding-top: 0;
+  }
+
+  .header.menu-open .nav-item {
+    display: block;
+
+    margin: 35px 0 0 20px;
+  }
+  .header.menu-open .nav {
+    display: flex;
+    justify-content: flex-start;
+  }
+
+  .menu-open .nav .nav-list {
+    margin-top: 38px;
+    display: block;
+  }
+  .section-about {
+    font-size: 18px;
+  }
+  .sub-heading {
+    height: 55px;
+    font-size: 20px;
+    line-height: 55px;
+  }
+  .history-item {
+    padding: 20px;
+    font-size: 16px;
+    margin: 24px 0;
+  }
+  .section-history {
+    display: block;
+    margin: 25px 0;
+  }
+  .history-item:last-child {
+    padding: 20px;
+  }
+  span {
+    font-size: 24px;
+  }
+  #contactUs {
+    display: flex;
+    align-items: stretch;
+    position: relative;
+    height: 150px;
+    width: 100%;
+  }
+  .send-message {
+    position: absolute;
+    bottom: -80px;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    font-size: 24px;
+  }
+  .send-message-area {
+    margin: 20px auto 0;
+    font-size: 18px;
+    line-height: 30px;
+    width: 280px;
+    height: 30px;
+  }
+}
